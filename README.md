@@ -192,9 +192,11 @@ More accurate long-term trajectories
 
 A detailed comparison was conducted using percentage error metrics:
 
-Metric	ARIMA	LSTM
-RMSE%	32.28%	21.52%
-MAE%	22.37%	17.88%
+| **Metric** | **ARIMA** | **LSTM** |
+|-----------|-----------|----------|
+| **RMSE%** | 32.28%    | 21.52%   |
+| **MAE%**  | 22.37%    | 17.88%   |
+
 
 ## Interpretation
 
