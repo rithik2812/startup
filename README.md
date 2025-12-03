@@ -234,3 +234,35 @@ Indicates acceleration or slowdown phases
 More adaptable to historical complexity
 
 The LSTM forecast provides a richer understanding of future ecosystem behavior.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This project predicts how the global startup ecosystem will grow in the future. The raw dataset had information about individual startups like how much funding they raised, their valuation, revenue, and whether they were profitable. I converted this startup-level data into yearly totals and averages so it becomes a proper time-series (for example: total funding per year, number of startups per year, average valuation per year, etc.).
+
+Once the yearly data was created, I used two models to forecast the next five years:
+
+ARIMA, a simple statistical model that works well for straight, predictable (linear) trends
+
+LSTM, a deep learning model that can learn complicated (nonlinear) patterns like sudden jumps or drops in funding
+
+After comparing both models, LSTM performed better and reduced forecasting error by about 33% compared to ARIMA. Finally, I used both models to generate a 5-year forecast of funding and valuation trends and analyzed how the startup ecosystem may evolve.
